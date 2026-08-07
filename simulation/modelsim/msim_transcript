@@ -71,6 +71,6 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Break key hit 
-# Simulation stop requested.
-# Simulation Breakpoint: Simulation stop requested.
+# Break in Module counter at C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/counter.sv line 24
+# Simulation Breakpoint: Break in Module counter at C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/counter.sv line 24
 # MACRO ./ongakucircuits_fpga_voiceassigner_top_run_msim_rtl_verilog.do PAUSED at line 22
