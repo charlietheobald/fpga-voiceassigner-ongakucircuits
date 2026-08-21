@@ -5,8 +5,8 @@ module ongakucircuits_fpga_voiceassigner_tb;
 	// Testbench some MIDI events
 	
 	parameter clockPeriod = 526; // 526ns - corresponds to 1.90MHz
-	parameter oneSecond = 1000000000;
-	parameter halfSecond = 500000000;
+	parameter waitLong = 100000000;
+	parameter waitShort = 50000000;
 	logic aclk;
 	logic globalCounterReset;
 	logic[11:0] TOG;
@@ -37,7 +37,7 @@ module ongakucircuits_fpga_voiceassigner_tb;
 
 		globalCounterReset = 1'b1;
 		pitchMuxTransmitData = 32'hFFFFFFF0; // voice 0 selected
-		octaveMuxTransmitData = 32'hFFFFFFF0; // voice 0 4 octaves down
+		octaveMuxTransmitData = 32'hFFFFFFF0; // voice 0 one octave down
 		#clockPeriod;
 		srclk = 1'b1;
 		globalCounterReset = 1'b0;
@@ -56,7 +56,7 @@ module ongakucircuits_fpga_voiceassigner_tb;
 		#clockPeriod;
 		rclk = 1'b0;
 		
-		#oneSecond;
+		#waitLong;
 		
 		pitchMuxTransmitData = 32'hFFFFFFFF;
 		octaveMuxTransmitData = 32'hFFFFFFFF;

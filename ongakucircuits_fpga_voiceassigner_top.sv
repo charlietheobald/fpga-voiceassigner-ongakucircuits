@@ -1,29 +1,50 @@
 module ongakucircuits_fpga_voiceassigner_top
-	(input logic[17:0] GPIO_0_IN, output logic[25:18] GPIO_0_OUT);
+	(inout logic[27:0] GPIO_0, output logic[11:0] LEDR, output logic[7:0] LEDG, input logic CLOCK_50);
 	// Assign GPIOs:
 	// 0 : SRCLK, 1: RCLK, 2: PITCHSER, 3: CLR, 4: OE, 5: OCTAVESER
-	// 6...17: TOG1...TOG12
-	// 18...25: V1...V8
+	// 6...9, 12...19 TOG1...TOG12
+	// 20...27: V1...V8
 	
-	logic srclk; assign srclk = GPIO_0_IN[0];
-	logic rclk; assign rclk = GPIO_0_IN[1];
-	logic pitchser; assign pitchser = GPIO_0_IN[2];
-	logic clr; assign clr = GPIO_0_IN[3];
-	logic oe; assign oe = GPIO_0_IN[4];
-	logic octaveser; assign octaveser = GPIO_0_IN[5];
-	logic[15:0] TOG_IN; assign TOG_IN = {4'b0, GPIO_0_IN[17:6]};
+	//====================================
+	// Setting up inputs
+	assign GPIO_0[19:0] = 20'bZ; // Turns off output drivers for input pins
 	
+	logic srclk_async; assign srclk_async = GPIO_0[0];
+	logic rclk_async; assign rclk_async = GPIO_0[1];
+	logic pitchser_async; assign pitchser_async = GPIO_0[2];
+	logic clr_async; assign clr_async = GPIO_0[3];
+	logic oe_async; assign oe_async = GPIO_0[4];
+	logic octaveser_async; assign octaveser_async = GPIO_0[5];
+	logic[15:0] TOG_IN; assign TOG_IN = {4'b0, GPIO_0[19:12], GPIO_0[9:6]};
+	assign LEDR[11:0] = TOG_IN[11:0];
+	logic[7:0] voices = 8'b0;
+
+	//==============================================
+	// Clock domain synchronisation to reduce input clock stupidness
+	logic srclk, rclk, pitchser, clr, oe, octaveser;
+	clocksync synchroniser_srclk(.sysclk(CLOCK_50), .goodclk(srclk), .badclk(srclk_async));
+	clocksync synchroniser_rclk(.sysclk(CLOCK_50), .goodclk(rclk), .badclk(rclk_async));
+	clocksync synchroniser_pitchser(.sysclk(CLOCK_50), .goodclk(pitchser), .badclk(pitchser_async));
+	clocksync synchroniser_clr(.sysclk(CLOCK_50), .goodclk(clr), .badclk(clr_async));
+	clocksync synchroniser_oe(.sysclk(CLOCK_50), .goodclk(oe), .badclk(oe_async));
+	clocksync synchroniser_octaveser(.sysclk(CLOCK_50), .goodclk(octaveser), .badclk(octaveser_async));
+
 	
+	//=================================
+	// Internal signals
 	logic[7:0] pitchsrout_1; logic[7:0] pitchsrout_2; logic[7:0] pitchsrout_3; logic[7:0] pitchsrout_4;
 	logic[7:0] octavesrout_1; logic[7:0] octavesrout_2; logic[7:0] octavesrout_3; logic[7:0] octavesrout_4;
-	
 	logic chain_out1; logic chain_out2; logic chain_out3; logic chain_out4; logic chain_out5; logic chain_out6; logic chain_out7; logic chain_out8; 
 	
 	logic pitchmuxout_1; logic pitchmuxout_2; logic pitchmuxout_3; logic pitchmuxout_4; logic pitchmuxout_5; logic pitchmuxout_6; logic pitchmuxout_7; logic pitchmuxout_8;
 	
 	logic[6:0] freqdivout_1; logic[6:0] freqdivout_2; logic[6:0] freqdivout_3; logic[6:0] freqdivout_4; logic[6:0] freqdivout_5; logic[6:0] freqdivout_6; logic[6:0] freqdivout_7; logic[6:0] freqdivout_8;
 	
-	logic v1; logic v2; logic v3; logic v4; logic v5; logic v6; logic v7; logic v8; 
+	logic v1; logic v2; logic v3; logic v4; logic v5; logic v6; logic v7; logic v8;
+
+
+	//===================================
+	// Module definitions
 	
 	
 	sr74hc595 pitchsr1(.srclk(srclk), .rclk(rclk), .ser(pitchser), .clr(clr), .oe(oe), .srout(pitchsrout_1), .chain_out(chain_out1));
@@ -35,7 +56,6 @@ module ongakucircuits_fpga_voiceassigner_top
 	sr74hc595 octavesr2(.srclk(srclk), .rclk(rclk), .ser(chain_out5), .clr(clr), .oe(oe), .srout(octavesrout_2), .chain_out(chain_out6));
 	sr74hc595 octavesr3(.srclk(srclk), .rclk(rclk), .ser(chain_out6), .clr(clr), .oe(oe), .srout(octavesrout_3), .chain_out(chain_out7));
 	sr74hc595 octavesr4(.srclk(srclk), .rclk(rclk), .ser(chain_out7), .clr(clr), .oe(oe), .srout(octavesrout_4), .chain_out(chain_out8));
-	
 	
 	mux74hc4067 pitchmux1(.din(TOG_IN), .ctrl(pitchsrout_1[3:0]), .en(1'b0), .out(pitchmuxout_1));
 	mux74hc4067 pitchmux2(.din(TOG_IN), .ctrl(pitchsrout_1[7:4]), .en(1'b0), .out(pitchmuxout_2));
@@ -63,8 +83,10 @@ module ongakucircuits_fpga_voiceassigner_top
 	mux74hc4067 octavemux6(.din({9'b0,freqdivout_6}), .ctrl(octavesrout_3[7:4]), .en(1'b0), .out(v6));
 	mux74hc4067 octavemux7(.din({9'b0,freqdivout_7}), .ctrl(octavesrout_4[3:0]), .en(1'b0), .out(v7));
 	mux74hc4067 octavemux8(.din({9'b0,freqdivout_8}), .ctrl(octavesrout_4[7:4]), .en(1'b0), .out(v8));
+
 	
-	assign GPIO_0_OUT = {v8, v7, v6, v5, v4, v3, v2, v1};
+	assign voices = {v8, v7, v6, v5, v4, v3, v2, v1}; assign GPIO_0[27:20] = voices;
+	assign LEDG[7:0] = voices;
 
 endmodule
 
