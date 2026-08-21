@@ -1,17 +1,31 @@
 module ongakucircuits_fpga_voiceassigner_top
-	(input logic[17:0] GPIO_0_IN, output logic[25:18] GPIO_0_OUT);
+	(inout logic[27:0] GPIO_0, output logic[11:0] LEDR, output logic[7:0] LEDG, input logic CLOCK_50);
 	// Assign GPIOs:
 	// 0 : SRCLK, 1: RCLK, 2: PITCHSER, 3: CLR, 4: OE, 5: OCTAVESER
-	// 6...17: TOG1...TOG12
-	// 18...25: V1...V8
+	// 6...9, 12...19 TOG1...TOG12
+	// 20...27: V1...V8
 	
-	logic srclk; assign srclk = GPIO_0_IN[0];
-	logic rclk; assign rclk = GPIO_0_IN[1];
-	logic pitchser; assign pitchser = GPIO_0_IN[2];
-	logic clr; assign clr = GPIO_0_IN[3];
-	logic oe; assign oe = GPIO_0_IN[4];
-	logic octaveser; assign octaveser = GPIO_0_IN[5];
-	logic[15:0] TOG_IN; assign TOG_IN = {4'b0, GPIO_0_IN[17:6]};
+	//====================================
+	// Setting up inputs
+	assign GPIO_0[19:0] = 20'bZ; // Turns off output drivers for input pins
+	
+	logic srclk; assign srclk = GPIO_0[0];
+	logic rclk; assign rclk = GPIO_0[1];
+	logic pitchser; assign pitchser = GPIO_0[2];
+	logic clr; assign clr = GPIO_0[3];
+	logic oe; assign oe = GPIO_0[4];
+	logic octaveser; assign octaveser = GPIO_0[5];
+	logic[15:0] TOG_IN; assign TOG_IN = {4'b0, GPIO_0[19:12], GPIO_0[9:6]};
+	assign LEDR[11:0] = TOG_IN[11:0];
+	logic[7:0] voices = 8'b0;
+
+	//==============================================
+	// Clock domain synchronisation to reduce input clock stupidness
+
+	
+
+
+
 	
 	
 	logic[7:0] pitchsrout_1; logic[7:0] pitchsrout_2; logic[7:0] pitchsrout_3; logic[7:0] pitchsrout_4;
@@ -64,7 +78,8 @@ module ongakucircuits_fpga_voiceassigner_top
 	mux74hc4067 octavemux7(.din({9'b0,freqdivout_7}), .ctrl(octavesrout_4[3:0]), .en(1'b0), .out(v7));
 	mux74hc4067 octavemux8(.din({9'b0,freqdivout_8}), .ctrl(octavesrout_4[7:4]), .en(1'b0), .out(v8));
 	
-	assign GPIO_0_OUT = {v8, v7, v6, v5, v4, v3, v2, v1};
+	assign voices = {v8, v7, v6, v5, v4, v3, v2, v1}; assign GPIO_0[27:20] = voices;
+	assign LEDG[7:0] = voices;
 
 endmodule
 

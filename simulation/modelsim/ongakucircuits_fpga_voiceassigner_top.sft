@@ -1,5 +1,5 @@
-set tool_name "ModelSim (SystemVerilog)"
+set tool_name "ModelSim-Altera (VHDL)"
 set corner_file_list {
-	{{"Slow Model"} {ongakucircuits_fpga_voiceassigner_top.svo ongakucircuits_fpga_voiceassigner_top_v.sdo}}
-	{{"Fast Model"} {ongakucircuits_fpga_voiceassigner_top_fast.svo ongakucircuits_fpga_voiceassigner_top_v_fast.sdo}}
+	{{"Slow Model"} {ongakucircuits_fpga_voiceassigner_top.vho ongakucircuits_fpga_voiceassigner_top_vhd.sdo}}
+	{{"Fast Model"} {ongakucircuits_fpga_voiceassigner_top_fast.vho ongakucircuits_fpga_voiceassigner_top_vhd_fast.sdo}}
 }
