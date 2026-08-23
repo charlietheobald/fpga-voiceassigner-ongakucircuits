@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ongakucircuits_fpga_voiceassigner_top
-Sun Aug 16 18:18:17 2026
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Sun Aug 23 21:29:53 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -14,35 +14,27 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "mux74hc4067:octavemux8"
- 10. Port Connectivity Checks: "mux74hc4067:octavemux7"
- 11. Port Connectivity Checks: "mux74hc4067:octavemux6"
- 12. Port Connectivity Checks: "mux74hc4067:octavemux5"
- 13. Port Connectivity Checks: "mux74hc4067:octavemux4"
- 14. Port Connectivity Checks: "mux74hc4067:octavemux3"
- 15. Port Connectivity Checks: "mux74hc4067:octavemux2"
- 16. Port Connectivity Checks: "mux74hc4067:octavemux1"
- 17. Port Connectivity Checks: "divcd4024:freqdiv8"
- 18. Port Connectivity Checks: "divcd4024:freqdiv7"
- 19. Port Connectivity Checks: "divcd4024:freqdiv6"
- 20. Port Connectivity Checks: "divcd4024:freqdiv5"
- 21. Port Connectivity Checks: "divcd4024:freqdiv4"
- 22. Port Connectivity Checks: "divcd4024:freqdiv3"
- 23. Port Connectivity Checks: "divcd4024:freqdiv2"
- 24. Port Connectivity Checks: "divcd4024:freqdiv1"
- 25. Port Connectivity Checks: "mux74hc4067:pitchmux8"
- 26. Port Connectivity Checks: "mux74hc4067:pitchmux7"
- 27. Port Connectivity Checks: "mux74hc4067:pitchmux6"
- 28. Port Connectivity Checks: "mux74hc4067:pitchmux5"
- 29. Port Connectivity Checks: "mux74hc4067:pitchmux4"
- 30. Port Connectivity Checks: "mux74hc4067:pitchmux3"
- 31. Port Connectivity Checks: "mux74hc4067:pitchmux2"
- 32. Port Connectivity Checks: "mux74hc4067:pitchmux1"
- 33. Port Connectivity Checks: "sr74hc595:octavesr4"
- 34. Port Connectivity Checks: "sr74hc595:pitchsr4"
- 35. Elapsed Time Per Partition
- 36. Analysis & Synthesis Messages
- 37. Analysis & Synthesis Suppressed Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "mux74hc4067:octavemux8"
+ 11. Port Connectivity Checks: "mux74hc4067:octavemux7"
+ 12. Port Connectivity Checks: "mux74hc4067:octavemux6"
+ 13. Port Connectivity Checks: "mux74hc4067:octavemux5"
+ 14. Port Connectivity Checks: "mux74hc4067:octavemux4"
+ 15. Port Connectivity Checks: "mux74hc4067:octavemux3"
+ 16. Port Connectivity Checks: "mux74hc4067:octavemux2"
+ 17. Port Connectivity Checks: "mux74hc4067:octavemux1"
+ 18. Port Connectivity Checks: "mux74hc4067:pitchmux8"
+ 19. Port Connectivity Checks: "mux74hc4067:pitchmux7"
+ 20. Port Connectivity Checks: "mux74hc4067:pitchmux6"
+ 21. Port Connectivity Checks: "mux74hc4067:pitchmux5"
+ 22. Port Connectivity Checks: "mux74hc4067:pitchmux4"
+ 23. Port Connectivity Checks: "mux74hc4067:pitchmux3"
+ 24. Port Connectivity Checks: "mux74hc4067:pitchmux2"
+ 25. Port Connectivity Checks: "mux74hc4067:pitchmux1"
+ 26. Port Connectivity Checks: "spireceiver:spireceiver"
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -68,16 +60,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Aug 16 18:18:17 2026           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Sun Aug 23 21:29:53 2026           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ongakucircuits_fpga_voiceassigner_top           ;
 ; Top-level Entity Name              ; ongakucircuits_fpga_voiceassigner_top           ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 312                                             ;
-;     Total combinational functions  ; 250                                             ;
-;     Dedicated logic registers      ; 184                                             ;
-; Total registers                    ; 184                                             ;
-; Total pins                         ; 48                                              ;
+; Total logic elements               ; 80                                              ;
+;     Total combinational functions  ; 48                                              ;
+;     Dedicated logic registers      ; 69                                              ;
+; Total registers                    ; 69                                              ;
+; Total pins                         ; 49                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -186,8 +178,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path         ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                ; Library ;
 +------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; spi_receiver.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/spi_receiver.sv                          ;         ;
 ; ongakucircuits_fpga_voiceassigner_top.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_top.sv ;         ;
-; sr74hc595.sv                             ; yes             ; User SystemVerilog HDL File  ; C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/sr74hc595.sv                             ;         ;
 ; mux74hc4067.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/mux74hc4067.sv                           ;         ;
 ; divcd4024.sv                             ; yes             ; User SystemVerilog HDL File  ; C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/divcd4024.sv                             ;         ;
 +------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
@@ -198,70 +190,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 312       ;
+; Estimated Total logic elements              ; 80        ;
 ;                                             ;           ;
-; Total combinational functions               ; 250       ;
+; Total combinational functions               ; 48        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 56        ;
-;     -- 3 input functions                    ; 72        ;
-;     -- <=2 input functions                  ; 122       ;
+;     -- 4 input functions                    ; 11        ;
+;     -- 3 input functions                    ; 0         ;
+;     -- <=2 input functions                  ; 37        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 210       ;
-;     -- arithmetic mode                      ; 40        ;
+;     -- normal mode                          ; 43        ;
+;     -- arithmetic mode                      ; 5         ;
 ;                                             ;           ;
-; Total registers                             ; 184       ;
-;     -- Dedicated logic registers            ; 184       ;
+; Total registers                             ; 69        ;
+;     -- Dedicated logic registers            ; 69        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 48        ;
+; I/O pins                                    ; 49        ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
-; Maximum fan-out node                        ; GPIO_0[3] ;
-; Maximum fan-out                             ; 66        ;
-; Total fan-out                               ; 1064      ;
-; Average fan-out                             ; 2.21      ;
+; Maximum fan-out node                        ; GPIO_0[0] ;
+; Maximum fan-out                             ; 69        ;
+; Total fan-out                               ; 313       ;
+; Average fan-out                             ; 1.89      ;
 +---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
-; |ongakucircuits_fpga_voiceassigner_top ; 250 (0)           ; 184 (0)      ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |ongakucircuits_fpga_voiceassigner_top                        ; work         ;
-;    |divcd4024:freqdiv1|                ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|divcd4024:freqdiv1     ; work         ;
-;    |divcd4024:freqdiv2|                ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|divcd4024:freqdiv2     ; work         ;
-;    |divcd4024:freqdiv3|                ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|divcd4024:freqdiv3     ; work         ;
-;    |divcd4024:freqdiv4|                ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|divcd4024:freqdiv4     ; work         ;
-;    |divcd4024:freqdiv5|                ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|divcd4024:freqdiv5     ; work         ;
-;    |divcd4024:freqdiv6|                ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|divcd4024:freqdiv6     ; work         ;
-;    |divcd4024:freqdiv7|                ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|divcd4024:freqdiv7     ; work         ;
-;    |divcd4024:freqdiv8|                ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|divcd4024:freqdiv8     ; work         ;
-;    |mux74hc4067:octavemux1|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:octavemux1 ; work         ;
-;    |mux74hc4067:octavemux2|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:octavemux2 ; work         ;
-;    |mux74hc4067:octavemux3|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:octavemux3 ; work         ;
-;    |mux74hc4067:octavemux4|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:octavemux4 ; work         ;
-;    |mux74hc4067:octavemux5|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:octavemux5 ; work         ;
-;    |mux74hc4067:octavemux6|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:octavemux6 ; work         ;
-;    |mux74hc4067:octavemux7|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:octavemux7 ; work         ;
-;    |mux74hc4067:octavemux8|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:octavemux8 ; work         ;
-;    |mux74hc4067:pitchmux1|             ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:pitchmux1  ; work         ;
-;    |mux74hc4067:pitchmux2|             ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:pitchmux2  ; work         ;
-;    |mux74hc4067:pitchmux3|             ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:pitchmux3  ; work         ;
-;    |mux74hc4067:pitchmux4|             ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:pitchmux4  ; work         ;
-;    |mux74hc4067:pitchmux5|             ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:pitchmux5  ; work         ;
-;    |mux74hc4067:pitchmux6|             ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:pitchmux6  ; work         ;
-;    |mux74hc4067:pitchmux7|             ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:pitchmux7  ; work         ;
-;    |mux74hc4067:pitchmux8|             ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|mux74hc4067:pitchmux8  ; work         ;
-;    |sr74hc595:octavesr1|               ; 9 (9)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|sr74hc595:octavesr1    ; work         ;
-;    |sr74hc595:octavesr2|               ; 8 (8)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|sr74hc595:octavesr2    ; work         ;
-;    |sr74hc595:octavesr3|               ; 8 (8)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|sr74hc595:octavesr3    ; work         ;
-;    |sr74hc595:octavesr4|               ; 8 (8)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|sr74hc595:octavesr4    ; work         ;
-;    |sr74hc595:pitchsr1|                ; 9 (9)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|sr74hc595:pitchsr1     ; work         ;
-;    |sr74hc595:pitchsr2|                ; 8 (8)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|sr74hc595:pitchsr2     ; work         ;
-;    |sr74hc595:pitchsr3|                ; 8 (8)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|sr74hc595:pitchsr3     ; work         ;
-;    |sr74hc595:pitchsr4|                ; 8 (8)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|sr74hc595:pitchsr4     ; work         ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+
+; |ongakucircuits_fpga_voiceassigner_top ; 48 (8)            ; 69 (0)       ; 0           ; 0            ; 0       ; 0         ; 49   ; 0            ; |ongakucircuits_fpga_voiceassigner_top                         ; work         ;
+;    |spireceiver:spireceiver|           ; 40 (40)           ; 69 (69)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ongakucircuits_fpga_voiceassigner_top|spireceiver:spireceiver ; work         ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -270,166 +231,111 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 184   ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 69    ;
+; Number of registers using Synchronous Clear  ; 6     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux74hc4067:octavemux8" ;
-+------------+-------+----------+--------------------+
-; Port       ; Type  ; Severity ; Details            ;
-+------------+-------+----------+--------------------+
-; din[15..7] ; Input ; Info     ; Stuck at GND       ;
-; en         ; Input ; Info     ; Stuck at GND       ;
-+------------+-------+----------+--------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |ongakucircuits_fpga_voiceassigner_top|spireceiver:spireceiver|bitCount[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux74hc4067:octavemux7" ;
-+------------+-------+----------+--------------------+
-; Port       ; Type  ; Severity ; Details            ;
-+------------+-------+----------+--------------------+
-; din[15..7] ; Input ; Info     ; Stuck at GND       ;
-; en         ; Input ; Info     ; Stuck at GND       ;
-+------------+-------+----------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux74hc4067:octavemux8"                                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; din[15..7] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux74hc4067:octavemux6" ;
-+------------+-------+----------+--------------------+
-; Port       ; Type  ; Severity ; Details            ;
-+------------+-------+----------+--------------------+
-; din[15..7] ; Input ; Info     ; Stuck at GND       ;
-; en         ; Input ; Info     ; Stuck at GND       ;
-+------------+-------+----------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux74hc4067:octavemux7"                                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; din[15..7] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux74hc4067:octavemux5" ;
-+------------+-------+----------+--------------------+
-; Port       ; Type  ; Severity ; Details            ;
-+------------+-------+----------+--------------------+
-; din[15..7] ; Input ; Info     ; Stuck at GND       ;
-; en         ; Input ; Info     ; Stuck at GND       ;
-+------------+-------+----------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux74hc4067:octavemux6"                                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; din[15..7] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux74hc4067:octavemux4" ;
-+------------+-------+----------+--------------------+
-; Port       ; Type  ; Severity ; Details            ;
-+------------+-------+----------+--------------------+
-; din[15..7] ; Input ; Info     ; Stuck at GND       ;
-; en         ; Input ; Info     ; Stuck at GND       ;
-+------------+-------+----------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux74hc4067:octavemux5"                                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; din[15..7] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux74hc4067:octavemux3" ;
-+------------+-------+----------+--------------------+
-; Port       ; Type  ; Severity ; Details            ;
-+------------+-------+----------+--------------------+
-; din[15..7] ; Input ; Info     ; Stuck at GND       ;
-; en         ; Input ; Info     ; Stuck at GND       ;
-+------------+-------+----------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux74hc4067:octavemux4"                                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; din[15..7] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux74hc4067:octavemux2" ;
-+------------+-------+----------+--------------------+
-; Port       ; Type  ; Severity ; Details            ;
-+------------+-------+----------+--------------------+
-; din[15..7] ; Input ; Info     ; Stuck at GND       ;
-; en         ; Input ; Info     ; Stuck at GND       ;
-+------------+-------+----------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux74hc4067:octavemux3"                                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; din[15..7] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux74hc4067:octavemux1" ;
-+------------+-------+----------+--------------------+
-; Port       ; Type  ; Severity ; Details            ;
-+------------+-------+----------+--------------------+
-; din[15..7] ; Input ; Info     ; Stuck at GND       ;
-; en         ; Input ; Info     ; Stuck at GND       ;
-+------------+-------+----------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux74hc4067:octavemux2"                                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; din[15..7] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------+
-; Port Connectivity Checks: "divcd4024:freqdiv8" ;
-+------+-------+----------+----------------------+
-; Port ; Type  ; Severity ; Details              ;
-+------+-------+----------+----------------------+
-; rst  ; Input ; Info     ; Stuck at GND         ;
-+------+-------+----------+----------------------+
-
-
-+------------------------------------------------+
-; Port Connectivity Checks: "divcd4024:freqdiv7" ;
-+------+-------+----------+----------------------+
-; Port ; Type  ; Severity ; Details              ;
-+------+-------+----------+----------------------+
-; rst  ; Input ; Info     ; Stuck at GND         ;
-+------+-------+----------+----------------------+
-
-
-+------------------------------------------------+
-; Port Connectivity Checks: "divcd4024:freqdiv6" ;
-+------+-------+----------+----------------------+
-; Port ; Type  ; Severity ; Details              ;
-+------+-------+----------+----------------------+
-; rst  ; Input ; Info     ; Stuck at GND         ;
-+------+-------+----------+----------------------+
-
-
-+------------------------------------------------+
-; Port Connectivity Checks: "divcd4024:freqdiv5" ;
-+------+-------+----------+----------------------+
-; Port ; Type  ; Severity ; Details              ;
-+------+-------+----------+----------------------+
-; rst  ; Input ; Info     ; Stuck at GND         ;
-+------+-------+----------+----------------------+
-
-
-+------------------------------------------------+
-; Port Connectivity Checks: "divcd4024:freqdiv4" ;
-+------+-------+----------+----------------------+
-; Port ; Type  ; Severity ; Details              ;
-+------+-------+----------+----------------------+
-; rst  ; Input ; Info     ; Stuck at GND         ;
-+------+-------+----------+----------------------+
-
-
-+------------------------------------------------+
-; Port Connectivity Checks: "divcd4024:freqdiv3" ;
-+------+-------+----------+----------------------+
-; Port ; Type  ; Severity ; Details              ;
-+------+-------+----------+----------------------+
-; rst  ; Input ; Info     ; Stuck at GND         ;
-+------+-------+----------+----------------------+
-
-
-+------------------------------------------------+
-; Port Connectivity Checks: "divcd4024:freqdiv2" ;
-+------+-------+----------+----------------------+
-; Port ; Type  ; Severity ; Details              ;
-+------+-------+----------+----------------------+
-; rst  ; Input ; Info     ; Stuck at GND         ;
-+------+-------+----------+----------------------+
-
-
-+------------------------------------------------+
-; Port Connectivity Checks: "divcd4024:freqdiv1" ;
-+------+-------+----------+----------------------+
-; Port ; Type  ; Severity ; Details              ;
-+------+-------+----------+----------------------+
-; rst  ; Input ; Info     ; Stuck at GND         ;
-+------+-------+----------+----------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux74hc4067:octavemux1"                                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; din[15..7] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------+
@@ -505,22 +411,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------+-------+----------+------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sr74hc595:octavesr4"                                                                     ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; chain_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sr74hc595:pitchsr4"                                                                      ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; chain_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "spireceiver:spireceiver"                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; ack  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -528,7 +425,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -536,11 +433,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Aug 16 18:18:14 2026
+    Info: Processing started: Sun Aug 23 21:29:52 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ongakucircuits_fpga_voiceassigner -c ongakucircuits_fpga_voiceassigner_top
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file spi_receiver.sv
+    Info (12023): Found entity 1: spireceiver
 Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
     Info (12023): Found entity 1: counter
 Info (12021): Found 1 design units, including 1 entities, in source file ongakucircuits_fpga_voiceassigner_top.sv
@@ -555,110 +454,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file ongakuc
     Info (12023): Found entity 1: ongakucircuits_fpga_voiceassigner_sim
 Info (12021): Found 1 design units, including 1 entities, in source file ongakucircuits_fpga_voiceassigner_tb.sv
     Info (12023): Found entity 1: ongakucircuits_fpga_voiceassigner_tb
+Info (12021): Found 1 design units, including 1 entities, in source file clocksync.sv
+    Info (12023): Found entity 1: clocksync
 Info (12127): Elaborating entity "ongakucircuits_fpga_voiceassigner_top" for the top level hierarchy
-Info (12128): Elaborating entity "sr74hc595" for hierarchy "sr74hc595:pitchsr1"
+Info (12128): Elaborating entity "spireceiver" for hierarchy "spireceiver:spireceiver"
 Info (12128): Elaborating entity "mux74hc4067" for hierarchy "mux74hc4067:pitchmux1"
 Info (12128): Elaborating entity "divcd4024" for hierarchy "divcd4024:freqdiv1"
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "mux74hc4067:pitchmux8|out" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "mux74hc4067:pitchmux7|out" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "mux74hc4067:pitchmux6|out" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "mux74hc4067:pitchmux5|out" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "mux74hc4067:pitchmux4|out" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "mux74hc4067:pitchmux3|out" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "mux74hc4067:pitchmux2|out" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "mux74hc4067:pitchmux1|out" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr4|srout[0]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr4|srout[1]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr4|srout[2]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr4|srout[3]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr4|srout[4]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr4|srout[5]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr4|srout[6]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr4|srout[7]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr3|srout[0]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr3|srout[1]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr3|srout[2]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr3|srout[3]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr3|srout[4]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr3|srout[5]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr3|srout[6]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr3|srout[7]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr2|srout[0]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr2|srout[1]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr2|srout[2]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr2|srout[3]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr2|srout[4]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr2|srout[5]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr2|srout[6]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr2|srout[7]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr1|srout[0]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr1|srout[1]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr1|srout[2]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr1|srout[3]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr1|srout[4]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr1|srout[5]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr1|srout[6]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:octavesr1|srout[7]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr4|srout[0]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr4|srout[1]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr4|srout[2]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr4|srout[3]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr4|srout[4]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr4|srout[5]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr4|srout[6]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr4|srout[7]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr3|srout[0]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr3|srout[1]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr3|srout[2]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr3|srout[3]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr3|srout[4]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr3|srout[5]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr3|srout[6]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr3|srout[7]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr2|srout[0]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr2|srout[1]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr2|srout[2]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr2|srout[3]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr2|srout[4]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr2|srout[5]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr2|srout[6]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr2|srout[7]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr1|srout[0]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr1|srout[1]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr1|srout[2]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr1|srout[3]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr1|srout[4]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr1|srout[5]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr1|srout[6]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "sr74hc595:pitchsr1|srout[7]" feeding internal logic into a wire
-Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer mux74hc4067:pitchmux1|Mux0
-    Warning (19017): Found clock multiplexer mux74hc4067:pitchmux2|Mux0
-    Warning (19017): Found clock multiplexer mux74hc4067:pitchmux3|Mux0
-    Warning (19017): Found clock multiplexer mux74hc4067:pitchmux4|Mux0
-    Warning (19017): Found clock multiplexer mux74hc4067:pitchmux5|Mux0
-    Warning (19017): Found clock multiplexer mux74hc4067:pitchmux6|Mux0
-    Warning (19017): Found clock multiplexer mux74hc4067:pitchmux7|Mux0
-    Warning (19017): Found clock multiplexer mux74hc4067:pitchmux8|Mux0
-Warning (13044): Always-enabled tri-state buffer(s) removed
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux74hc4067:octavemux1|out" to the node "LEDG[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux74hc4067:octavemux2|out" to the node "LEDG[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux74hc4067:octavemux3|out" to the node "LEDG[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux74hc4067:octavemux4|out" to the node "LEDG[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux74hc4067:octavemux5|out" to the node "LEDG[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux74hc4067:octavemux6|out" to the node "LEDG[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux74hc4067:octavemux7|out" to the node "LEDG[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux74hc4067:octavemux8|out" to the node "LEDG[7]" into a wire
+Warning (13039): The following bidir pins have no drivers
+    Warning (13040): Bidir "GPIO_0[20]" has no driver
+    Warning (13040): Bidir "GPIO_0[21]" has no driver
+    Warning (13040): Bidir "GPIO_0[23]" has no driver
+    Warning (13040): Bidir "GPIO_0[24]" has no driver
+    Warning (13040): Bidir "GPIO_0[25]" has no driver
+    Warning (13040): Bidir "GPIO_0[26]" has no driver
+    Warning (13040): Bidir "GPIO_0[27]" has no driver
+Warning (13032): The following tri-state nodes are fed by constants
+    Warning (13033): The pin "GPIO_0[22]" is fed by VCC
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "mux74hc4067:octavemux1|out"
-    Warning (13010): Node "mux74hc4067:octavemux2|out"
-    Warning (13010): Node "mux74hc4067:octavemux3|out"
-    Warning (13010): Node "mux74hc4067:octavemux4|out"
-    Warning (13010): Node "mux74hc4067:octavemux5|out"
-    Warning (13010): Node "mux74hc4067:octavemux6|out"
-    Warning (13010): Node "mux74hc4067:octavemux7|out"
-    Warning (13010): Node "mux74hc4067:octavemux8|out"
+    Warning (13010): Node "GPIO_0[22]~synth"
 Warning (18029): Output pin "LEDR[0]" driven by bidirectional pin "GPIO_0[6]" cannot be tri-stated
 Warning (18029): Output pin "LEDR[1]" driven by bidirectional pin "GPIO_0[7]" cannot be tri-stated
 Warning (18029): Output pin "LEDR[2]" driven by bidirectional pin "GPIO_0[8]" cannot be tri-stated
@@ -674,16 +487,18 @@ Warning (18029): Output pin "LEDR[11]" driven by bidirectional pin "GPIO_0[19]" 
 Info (144001): Generated suppressed messages file C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/output_files/ongakucircuits_fpga_voiceassigner_top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 422 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 0 input pins
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50"
+Info (21057): Implemented 129 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
     Info (21059): Implemented 20 output pins
     Info (21060): Implemented 28 bidirectional pins
-    Info (21061): Implemented 374 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 113 warnings
-    Info: Peak virtual memory: 368 megabytes
-    Info: Processing ended: Sun Aug 16 18:18:17 2026
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info (21061): Implemented 80 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 4597 megabytes
+    Info: Processing ended: Sun Aug 23 21:29:53 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +------------------------------------------+

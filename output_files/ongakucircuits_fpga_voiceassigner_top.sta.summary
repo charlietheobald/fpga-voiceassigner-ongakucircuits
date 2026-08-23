@@ -3,75 +3,27 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'GPIO_0[0]'
-Slack : -1.347
-TNS   : -24.652
-
-Type  : Slow Model Setup 'GPIO_0[12]'
-Slack : -0.883
-TNS   : -26.110
-
-Type  : Slow Model Setup 'GPIO_0[1]'
-Slack : -0.373
-TNS   : -3.712
-
-Type  : Slow Model Hold 'GPIO_0[1]'
-Slack : -6.086
-TNS   : -177.022
-
-Type  : Slow Model Hold 'GPIO_0[12]'
-Slack : 0.391
-TNS   : 0.000
+Slack : -1.151
+TNS   : -42.911
 
 Type  : Slow Model Hold 'GPIO_0[0]'
-Slack : 0.859
+Slack : 0.026
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'GPIO_0[0]'
 Slack : -1.777
-TNS   : -65.777
-
-Type  : Slow Model Minimum Pulse Width 'GPIO_0[1]'
-Slack : -1.777
-TNS   : -65.777
-
-Type  : Slow Model Minimum Pulse Width 'GPIO_0[12]'
-Slack : -1.777
-TNS   : -57.777
+TNS   : -70.777
 
 Type  : Fast Model Setup 'GPIO_0[0]'
-Slack : -0.080
-TNS   : -0.223
-
-Type  : Fast Model Setup 'GPIO_0[12]'
-Slack : 0.155
-TNS   : 0.000
-
-Type  : Fast Model Setup 'GPIO_0[1]'
-Slack : 0.320
-TNS   : 0.000
-
-Type  : Fast Model Hold 'GPIO_0[1]'
-Slack : -2.886
-TNS   : -84.108
-
-Type  : Fast Model Hold 'GPIO_0[12]'
-Slack : 0.215
-TNS   : 0.000
+Slack : -0.028
+TNS   : -0.586
 
 Type  : Fast Model Hold 'GPIO_0[0]'
-Slack : 0.378
+Slack : 0.058
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'GPIO_0[0]'
 Slack : -1.777
-TNS   : -65.777
-
-Type  : Fast Model Minimum Pulse Width 'GPIO_0[1]'
-Slack : -1.777
-TNS   : -65.777
-
-Type  : Fast Model Minimum Pulse Width 'GPIO_0[12]'
-Slack : -1.777
-TNS   : -57.777
+TNS   : -70.777
 
 ------------------------------------------------------------
