@@ -10,49 +10,73 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner {C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/counter.sv}
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/spi_receiver.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module spireceiver
+# 
+# Top level modules:
+# 	spireceiver
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/counter.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module counter
 # 
 # Top level modules:
 # 	counter
-# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner {C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/sr74hc595.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module sr74hc595
-# 
-# Top level modules:
-# 	sr74hc595
-# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner {C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/mux74hc4067.sv}
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/mux74hc4067.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mux74hc4067
 # 
 # Top level modules:
 # 	mux74hc4067
-# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner {C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/divcd4024.sv}
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/divcd4024.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module divcd4024
 # 
 # Top level modules:
 # 	divcd4024
-# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner {C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_sim.sv}
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_sim.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ongakucircuits_fpga_voiceassigner_sim
 # 
 # Top level modules:
 # 	ongakucircuits_fpga_voiceassigner_sim
-# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner {C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_tb.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ongakucircuits_fpga_voiceassigner_tb
 # 
 # Top level modules:
 # 	ongakucircuits_fpga_voiceassigner_tb
 # 
-# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner {C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_tb.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ongakucircuits_fpga_voiceassigner_tb
 # 
 # Top level modules:
 # 	ongakucircuits_fpga_voiceassigner_tb
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/counter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/divcd4024.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module divcd4024
+# 
+# Top level modules:
+# 	divcd4024
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/mux74hc4067.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux74hc4067
+# 
+# Top level modules:
+# 	mux74hc4067
+# vlog -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits {C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_sim.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ongakucircuits_fpga_voiceassigner_sim
+# 
+# Top level modules:
+# 	ongakucircuits_fpga_voiceassigner_sim
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  ongakucircuits_fpga_voiceassigner_tb
 # vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps ongakucircuits_fpga_voiceassigner_tb 
@@ -60,7 +84,7 @@
 # Loading work.ongakucircuits_fpga_voiceassigner_tb
 # Loading work.counter
 # Loading work.ongakucircuits_fpga_voiceassigner_sim
-# Loading work.sr74hc595
+# Loading work.spireceiver
 # Loading work.mux74hc4067
 # Loading work.divcd4024
 # 
@@ -71,6 +95,6 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Break key hit 
-# Simulation stop requested.
-# Simulation Breakpoint: Simulation stop requested.
-# MACRO ./ongakucircuits_fpga_voiceassigner_top_run_msim_rtl_verilog.do PAUSED at line 22
+# Break in Module counter at C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/counter.sv line 24
+# Simulation Breakpoint: Break in Module counter at C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/counter.sv line 24
+# MACRO ./ongakucircuits_fpga_voiceassigner_top_run_msim_rtl_verilog.do PAUSED at line 26

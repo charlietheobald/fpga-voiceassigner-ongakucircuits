@@ -1,77 +1,60 @@
 module ongakucircuits_fpga_voiceassigner_sim(
-	input logic srclk, rclk, pitchser, clr, oe, octaveser, input logic[11:0] TOG_IN,
+	input logic sclk, input logic sdi, input logic cs, 
+	input logic[11:0] TOG_IN,
+	//input logic[63:0] combinedData,
 	input logic freqdivreset,
-	output logic[31:0] pitchsrout,
-	output logic[31:0] octavesrout,
+
 	output logic [7:0] pitchmuxout,
 	output logic [55:0] freqdivout,
+	output logic [31:0] pitchData,
+	output logic [31:0] octaveData,
 
-	output logic[7:0] voices);
+	output logic[7:0] voices
+	);
+
+	//==========================================
+	// Internal signals
 	
 	logic[15:0] TOG_IN_16; assign TOG_IN_16 = {4'b0, TOG_IN};
 	
-	
-	logic[7:0] pitchsrout_1; logic[7:0] pitchsrout_2; logic[7:0] pitchsrout_3; logic[7:0] pitchsrout_4;
-	logic[7:0] octavesrout_1; logic[7:0] octavesrout_2; logic[7:0] octavesrout_3; logic[7:0] octavesrout_4;
-	
-	logic chain_out1; logic chain_out2; logic chain_out3; logic chain_out4; logic chain_out5; logic chain_out6; logic chain_out7; logic chain_out8; 
-	
-	logic pitchmuxout_1; logic pitchmuxout_2; logic pitchmuxout_3; logic pitchmuxout_4; logic pitchmuxout_5; logic pitchmuxout_6; logic pitchmuxout_7; logic pitchmuxout_8;
-	
 	logic[6:0] freqdivout_1; logic[6:0] freqdivout_2; logic[6:0] freqdivout_3; logic[6:0] freqdivout_4; logic[6:0] freqdivout_5; logic[6:0] freqdivout_6; logic[6:0] freqdivout_7; logic[6:0] freqdivout_8;
 	
-	logic v1; logic v2; logic v3; logic v4; logic v5; logic v6; logic v7; logic v8; 
+	logic ack;
+
+	logic data_valid;
+
+	//==============================================
+	// The actual device to test
 	
+	spireceiver spireceiver(.sclk(sclk), .sdi(sdi), .cs(cs), .outputMessage({pitchData,octaveData}), .data_valid(data_valid), .ack(ack));
+
+	mux74hc4067 pitchmux1(.din(TOG_IN_16), .ctrl(pitchData[3:0]), .en(1'b0), .out(pitchmuxout[0]));
+	mux74hc4067 pitchmux2(.din(TOG_IN_16), .ctrl(pitchData[7:4]), .en(1'b0), .out(pitchmuxout[1]));
+	mux74hc4067 pitchmux3(.din(TOG_IN_16), .ctrl(pitchData[11:8]), .en(1'b0), .out(pitchmuxout[2]));
+	mux74hc4067 pitchmux4(.din(TOG_IN_16), .ctrl(pitchData[15:12]), .en(1'b0), .out(pitchmuxout[3]));
+	mux74hc4067 pitchmux5(.din(TOG_IN_16), .ctrl(pitchData[19:16]), .en(1'b0), .out(pitchmuxout[4]));
+	mux74hc4067 pitchmux6(.din(TOG_IN_16), .ctrl(pitchData[23:20]), .en(1'b0), .out(pitchmuxout[5]));
+	mux74hc4067 pitchmux7(.din(TOG_IN_16), .ctrl(pitchData[27:24]), .en(1'b0), .out(pitchmuxout[6]));
+	mux74hc4067 pitchmux8(.din(TOG_IN_16), .ctrl(pitchData[31:28]), .en(1'b0), .out(pitchmuxout[7]));
 	
-	sr74hc595 pitchsr1(.srclk(srclk), .rclk(rclk), .ser(pitchser), .clr(clr), .oe(oe), .srout(pitchsrout_1), .chain_out(chain_out1));
-	sr74hc595 pitchsr2(.srclk(srclk), .rclk(rclk), .ser(chain_out1), .clr(clr), .oe(oe), .srout(pitchsrout_2), .chain_out(chain_out2));
-	sr74hc595 pitchsr3(.srclk(srclk), .rclk(rclk), .ser(chain_out2), .clr(clr), .oe(oe), .srout(pitchsrout_3), .chain_out(chain_out3));
-	sr74hc595 pitchsr4(.srclk(srclk), .rclk(rclk), .ser(chain_out3), .clr(clr), .oe(oe), .srout(pitchsrout_4), .chain_out(chain_out4));
+	divcd4024 freqdiv1(.clkin(pitchmuxout[0]), .rst(data_valid), .out(freqdivout_1));
+	divcd4024 freqdiv2(.clkin(pitchmuxout[1]), .rst(data_valid), .out(freqdivout_2));
+	divcd4024 freqdiv3(.clkin(pitchmuxout[2]), .rst(data_valid), .out(freqdivout_3));
+	divcd4024 freqdiv4(.clkin(pitchmuxout[3]), .rst(data_valid), .out(freqdivout_4));
+	divcd4024 freqdiv5(.clkin(pitchmuxout[4]), .rst(data_valid), .out(freqdivout_5));
+	divcd4024 freqdiv6(.clkin(pitchmuxout[5]), .rst(data_valid), .out(freqdivout_6));
+	divcd4024 freqdiv7(.clkin(pitchmuxout[6]), .rst(data_valid), .out(freqdivout_7));
+	divcd4024 freqdiv8(.clkin(pitchmuxout[7]), .rst(data_valid), .out(freqdivout_8));
 	
-	sr74hc595 octavesr1(.srclk(srclk), .rclk(rclk), .ser(octaveser), .clr(clr), .oe(oe), .srout(octavesrout_1), .chain_out(chain_out5));
-	sr74hc595 octavesr2(.srclk(srclk), .rclk(rclk), .ser(chain_out5), .clr(clr), .oe(oe), .srout(octavesrout_2), .chain_out(chain_out6));
-	sr74hc595 octavesr3(.srclk(srclk), .rclk(rclk), .ser(chain_out6), .clr(clr), .oe(oe), .srout(octavesrout_3), .chain_out(chain_out7));
-	sr74hc595 octavesr4(.srclk(srclk), .rclk(rclk), .ser(chain_out7), .clr(clr), .oe(oe), .srout(octavesrout_4), .chain_out(chain_out8));
+	mux74hc4067 octavemux1(.din({9'b0,freqdivout_1}), .ctrl(octaveData[3:0]), .en(1'b0), .out(voices[0]));
+	mux74hc4067 octavemux2(.din({9'b0,freqdivout_2}), .ctrl(octaveData[7:4]), .en(1'b0), .out(voices[1]));
+	mux74hc4067 octavemux3(.din({9'b0,freqdivout_3}), .ctrl(octaveData[11:8]), .en(1'b0), .out(voices[2]));
+	mux74hc4067 octavemux4(.din({9'b0,freqdivout_4}), .ctrl(octaveData[15:12]), .en(1'b0), .out(voices[3]));
+	mux74hc4067 octavemux5(.din({9'b0,freqdivout_5}), .ctrl(octaveData[19:16]), .en(1'b0), .out(voices[4]));
+	mux74hc4067 octavemux6(.din({9'b0,freqdivout_6}), .ctrl(octaveData[23:20]), .en(1'b0), .out(voices[5]));
+	mux74hc4067 octavemux7(.din({9'b0,freqdivout_7}), .ctrl(octaveData[27:24]), .en(1'b0), .out(voices[6]));
+	mux74hc4067 octavemux8(.din({9'b0,freqdivout_8}), .ctrl(octaveData[31:28]), .en(1'b0), .out(voices[7]));
 	
-	mux74hc4067 pitchmux1(.din(TOG_IN_16), .ctrl(pitchsrout_1[3:0]), .en(1'b0), .out(pitchmuxout_1));
-	mux74hc4067 pitchmux2(.din(TOG_IN_16), .ctrl(pitchsrout_1[7:4]), .en(1'b0), .out(pitchmuxout_2));
-	mux74hc4067 pitchmux3(.din(TOG_IN_16), .ctrl(pitchsrout_2[3:0]), .en(1'b0), .out(pitchmuxout_3));
-	mux74hc4067 pitchmux4(.din(TOG_IN_16), .ctrl(pitchsrout_2[7:4]), .en(1'b0), .out(pitchmuxout_4));
-	mux74hc4067 pitchmux5(.din(TOG_IN_16), .ctrl(pitchsrout_3[3:0]), .en(1'b0), .out(pitchmuxout_5));
-	mux74hc4067 pitchmux6(.din(TOG_IN_16), .ctrl(pitchsrout_3[7:4]), .en(1'b0), .out(pitchmuxout_6));
-	mux74hc4067 pitchmux7(.din(TOG_IN_16), .ctrl(pitchsrout_4[3:0]), .en(1'b0), .out(pitchmuxout_7));
-	mux74hc4067 pitchmux8(.din(TOG_IN_16), .ctrl(pitchsrout_4[7:4]), .en(1'b0), .out(pitchmuxout_8));
-	
-	divcd4024 freqdiv1(.clkin(pitchmuxout_1), .rst(freqdivreset), .out(freqdivout_1));
-	divcd4024 freqdiv2(.clkin(pitchmuxout_2), .rst(freqdivreset), .out(freqdivout_2));
-	divcd4024 freqdiv3(.clkin(pitchmuxout_3), .rst(freqdivreset), .out(freqdivout_3));
-	divcd4024 freqdiv4(.clkin(pitchmuxout_4), .rst(freqdivreset), .out(freqdivout_4));
-	divcd4024 freqdiv5(.clkin(pitchmuxout_5), .rst(freqdivreset), .out(freqdivout_5));
-	divcd4024 freqdiv6(.clkin(pitchmuxout_6), .rst(freqdivreset), .out(freqdivout_6));
-	divcd4024 freqdiv7(.clkin(pitchmuxout_7), .rst(freqdivreset), .out(freqdivout_7));
-	divcd4024 freqdiv8(.clkin(pitchmuxout_8), .rst(freqdivreset), .out(freqdivout_8));
-	
-	mux74hc4067 octavemux1(.din({9'b0,freqdivout_1}), .ctrl(octavesrout_1[3:0]), .en(1'b0), .out(v1));
-	mux74hc4067 octavemux2(.din({9'b0,freqdivout_2}), .ctrl(octavesrout_1[7:4]), .en(1'b0), .out(v2));
-	mux74hc4067 octavemux3(.din({9'b0,freqdivout_3}), .ctrl(octavesrout_2[3:0]), .en(1'b0), .out(v3));
-	mux74hc4067 octavemux4(.din({9'b0,freqdivout_4}), .ctrl(octavesrout_2[7:4]), .en(1'b0), .out(v4));
-	mux74hc4067 octavemux5(.din({9'b0,freqdivout_5}), .ctrl(octavesrout_3[3:0]), .en(1'b0), .out(v5));
-	mux74hc4067 octavemux6(.din({9'b0,freqdivout_6}), .ctrl(octavesrout_3[7:4]), .en(1'b0), .out(v6));
-	mux74hc4067 octavemux7(.din({9'b0,freqdivout_7}), .ctrl(octavesrout_4[3:0]), .en(1'b0), .out(v7));
-	mux74hc4067 octavemux8(.din({9'b0,freqdivout_8}), .ctrl(octavesrout_4[7:4]), .en(1'b0), .out(v8));
-	
-	assign voices = {v8, v7, v6, v5, v4, v3, v2, v1};
-	assign pitchmuxout = {pitchmuxout_8, pitchmuxout_7, pitchmuxout_6, pitchmuxout_5, pitchmuxout_4, pitchmuxout_3, pitchmuxout_2, pitchmuxout_1};
-	assign pitchsrout = {pitchsrout_4, pitchsrout_3, pitchsrout_2, pitchsrout_1};
-	assign octavesrout = {octavesrout_4, octavesrout_3, octavesrout_2, octavesrout_1};
 	assign freqdivout = {freqdivout_8, freqdivout_7, freqdivout_6, freqdivout_5, freqdivout_4, freqdivout_3, freqdivout_2, freqdivout_1};
 
 endmodule
-
-// 4 Shift registers - takes GPIO inputs as per spec of 74HC595
-
-// 8 Pitch multiplexers - simple 4-bit MUXes controlled by shift register outputs
-
-// 8 Frequency dividers - feed in the MUX outputs
-
-// 8 Octave multiplexers - simple 3-bit MUXes controlled by some more shift registers (later problem)

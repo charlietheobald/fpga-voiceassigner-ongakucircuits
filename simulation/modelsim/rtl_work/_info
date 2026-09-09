@@ -2,142 +2,142 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\charl\Documents\Quartus\ongakucircuits_fpga_voiceassigner\simulation\modelsim
+Z0 dC:\Users\charl\Documents\Quartus\fpga-voiceassigner-ongakucircuits\simulation\modelsim
 vcounter
 Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-IQM@7FKImUcdNQS<KdSGGh0
+If2bEaHkJ1jBnfoo@<PF8k0
 VUgAEX[RZH^bQ=gYlM@RGh0
 S1
-Z2 dC:\Users\charl\Documents\Quartus\ongakucircuits_fpga_voiceassigner\simulation\modelsim
-w1785882977
-8C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/counter.sv
-FC:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/counter.sv
+Z2 dC:\Users\charl\Documents\Quartus\fpga-voiceassigner-ongakucircuits\simulation\modelsim
+Z3 w1788990190
+8C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/counter.sv
+FC:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/counter.sv
 L0 1
-Z3 OV;L;10.1d;51
+Z4 OV;L;10.1d;51
 r1
 31
-Z4 o-sv -work work -O0
-Z5 !s92 -sv -work work +incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner -O0
+Z5 o-sv -work work -O0
+Z6 !s92 -sv -work work +incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits -O0
 !i10b 1
-!s100 N^O9z2IBA7bQcK?XQgPPB3
+!s100 7bjGzG:zX]]E;_`fXALCZ3
 !s105 counter_sv_unit
 !s85 0
-!s108 1785952233.559000
-!s107 C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/counter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner|C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/counter.sv|
+!s108 1788996956.816000
+!s107 C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits|C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/counter.sv|
 !s101 -O0
 vdivcd4024
 R1
-IgLALm>7^DhgE^4?C@?cKV3
+Ical;OXMhA0Ai9j<[zP1S13
 VFRPUn7U^WPdj:aQVP2QZj1
 S1
 R2
-w1785951630
-8C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/divcd4024.sv
-FC:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/divcd4024.sv
-L0 1
 R3
+8C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/divcd4024.sv
+FC:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/divcd4024.sv
+L0 1
+R4
 r1
 31
-R4
 R5
+R6
 !i10b 1
-!s100 @038I[I2c2TV88:]XkOGf0
+!s100 O9Rh=Q7>cid2ZCWS7meR21
 !s105 divcd4024_sv_unit
 !s85 0
-!s108 1785952233.675000
-!s107 C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/divcd4024.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner|C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/divcd4024.sv|
+!s108 1788996956.862000
+!s107 C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/divcd4024.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits|C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/divcd4024.sv|
 !s101 -O0
 vmux74hc4067
 R1
-I23GDeTAz_m`_3HC?]eJf^3
+IZbYXCjdQiVY84ZZde7J2M0
 Vi`YehFFPbc@dZ8<eR^]VD2
 S1
 R2
-w1785796946
-8C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/mux74hc4067.sv
-FC:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/mux74hc4067.sv
-L0 1
 R3
+8C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/mux74hc4067.sv
+FC:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/mux74hc4067.sv
+L0 1
+R4
 r1
 31
-R4
 R5
+R6
 !i10b 1
-!s100 8[6?cG0`;gcF;Dm7FD9OO0
+!s100 02PFZmz<e6bh7^HUMlnBX3
 !s105 mux74hc4067_sv_unit
 !s85 0
-!s108 1785952233.637000
-!s107 C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/mux74hc4067.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner|C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/mux74hc4067.sv|
+!s108 1788996956.909000
+!s107 C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/mux74hc4067.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits|C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/mux74hc4067.sv|
 !s101 -O0
 vongakucircuits_fpga_voiceassigner_sim
 R1
-ILd:ObMe20=1bcDT[7UYgG0
-VLM_TR4b><4O:DaHZ506>b3
+!i10b 1
+!s100 XIlI1Wc>k:cElzoT>iE8H2
+I:]?UINUfSX8?WVc^<X5a^3
+VGSDo=cM?chGi02?IA6lJ:3
+!s105 ongakucircuits_fpga_voiceassigner_sim_sv_unit
 S1
 R2
-w1785950248
-8C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_sim.sv
-FC:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_sim.sv
+w1788996111
+8C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_sim.sv
+FC:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_sim.sv
 L0 1
-R3
-r1
-31
 R4
-R5
-!i10b 1
-!s100 `ba8EbZzR_5Wg008S4KgM2
-!s105 ongakucircuits_fpga_voiceassigner_sim_sv_unit
+r1
 !s85 0
-!s108 1785952233.712000
-!s107 C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_sim.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner|C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_sim.sv|
+31
+!s108 1788996956.956000
+!s107 C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_sim.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits|C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_sim.sv|
 !s101 -O0
+R5
+R6
 vongakucircuits_fpga_voiceassigner_tb
 R1
-!i10b 1
-!s100 iT];ZMfFMo=Wo@BIAXTFB1
-IMVDzKdCL@b6M<6@D<JmTG3
-VR@S2750W^3gH]:0OaXG1K2
-!s105 ongakucircuits_fpga_voiceassigner_tb_sv_unit
+IIm3ml1n`8oSMMU>Xe7gMh2
+Vm>E4OIzUR^<348zPD]_Z>1
 S1
 R2
-w1785952222
-8C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_tb.sv
-FC:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_tb.sv
+w1788996921
+8C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_tb.sv
+FC:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_tb.sv
 L0 3
-R3
-r1
-!s85 0
-31
-!s108 1785952233.793000
-!s107 C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner|C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/ongakucircuits_fpga_voiceassigner_tb.sv|
-!s101 -O0
 R4
+r1
+31
 R5
-vsr74hc595
+R6
+!i10b 1
+!s100 kDB]ie>LPdk1WFj`^KN2S0
+!s105 ongakucircuits_fpga_voiceassigner_tb_sv_unit
+!s85 0
+!s108 1788996956.769000
+!s107 C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits|C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/ongakucircuits_fpga_voiceassigner_tb.sv|
+!s101 -O0
+vspireceiver
 R1
-IaXKdfl<jYPCNhWkXmI;UL0
-VGW22J6j;O;76cTPCchJeB0
+IAg8W9RAoG1L8?Q[>;XjkT2
+V82`QYbWcg3:QIbmQ1`JB10
 S1
 R2
-w1785946719
-8C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/sr74hc595.sv
-FC:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/sr74hc595.sv
-L0 1
 R3
+8C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/spi_receiver.sv
+FC:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/spi_receiver.sv
+L0 1
+R4
 r1
 31
-R4
 R5
+R6
 !i10b 1
-!s100 @>QAoP;6Ta]5bnaWh^6OD1
-!s105 sr74hc595_sv_unit
+!s100 Z@?Ta3IEJEj_j2Q7i^JOc1
+!s105 spi_receiver_sv_unit
 !s85 0
-!s108 1785952233.599000
-!s107 C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/sr74hc595.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner|C:/Users/charl/Documents/Quartus/ongakucircuits_fpga_voiceassigner/sr74hc595.sv|
+!s108 1788996956.468000
+!s107 C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/spi_receiver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits|C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/spi_receiver.sv|
 !s101 -O0

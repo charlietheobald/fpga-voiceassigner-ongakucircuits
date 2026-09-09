@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ongakucircuits_fpga_voiceassigner_top
-Wed Aug 05 18:50:26 2026
+Thu Sep 10 00:35:38 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -23,38 +23,38 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  15. Parameter Settings for User Entity Instance: counter:TOG10counter
  16. Parameter Settings for User Entity Instance: counter:TOG11counter
  17. Analysis & Elaboration Settings
- 18. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux8"
- 19. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux7"
- 20. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux6"
- 21. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux5"
- 22. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux4"
- 23. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux3"
- 24. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux2"
- 25. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux1"
- 26. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux8"
- 27. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux7"
- 28. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux6"
- 29. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux5"
- 30. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux4"
- 31. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux3"
- 32. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux2"
- 33. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux1"
- 34. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|sr74hc595:octavesr4"
- 35. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|sr74hc595:pitchsr4"
- 36. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut"
- 37. Port Connectivity Checks: "counter:TOG11counter"
- 38. Port Connectivity Checks: "counter:TOG10counter"
- 39. Port Connectivity Checks: "counter:TOG9counter"
- 40. Port Connectivity Checks: "counter:TOG8counter"
- 41. Port Connectivity Checks: "counter:TOG7counter"
- 42. Port Connectivity Checks: "counter:TOG6counter"
- 43. Port Connectivity Checks: "counter:TOG5counter"
- 44. Port Connectivity Checks: "counter:TOG4counter"
- 45. Port Connectivity Checks: "counter:TOG3counter"
- 46. Port Connectivity Checks: "counter:TOG2counter"
- 47. Port Connectivity Checks: "counter:TOG1counter"
- 48. Port Connectivity Checks: "counter:TOG0counter"
- 49. Analysis & Elaboration Messages
+ 18. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux8"
+ 19. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux7"
+ 20. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux6"
+ 21. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux5"
+ 22. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux4"
+ 23. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux3"
+ 24. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux2"
+ 25. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux1"
+ 26. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux8"
+ 27. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux7"
+ 28. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux6"
+ 29. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux5"
+ 30. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux4"
+ 31. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux3"
+ 32. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux2"
+ 33. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux1"
+ 34. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|spireceiver:spireceiver"
+ 35. Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut"
+ 36. Port Connectivity Checks: "counter:TOG11counter"
+ 37. Port Connectivity Checks: "counter:TOG10counter"
+ 38. Port Connectivity Checks: "counter:TOG9counter"
+ 39. Port Connectivity Checks: "counter:TOG8counter"
+ 40. Port Connectivity Checks: "counter:TOG7counter"
+ 41. Port Connectivity Checks: "counter:TOG6counter"
+ 42. Port Connectivity Checks: "counter:TOG5counter"
+ 43. Port Connectivity Checks: "counter:TOG4counter"
+ 44. Port Connectivity Checks: "counter:TOG3counter"
+ 45. Port Connectivity Checks: "counter:TOG2counter"
+ 46. Port Connectivity Checks: "counter:TOG1counter"
+ 47. Port Connectivity Checks: "counter:TOG0counter"
+ 48. Analysis & Elaboration Messages
+ 49. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -80,7 +80,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Wed Aug 05 18:50:26 2026           ;
+; Analysis & Elaboration Status      ; Successful - Thu Sep 10 00:35:38 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ongakucircuits_fpga_voiceassigner_top           ;
 ; Top-level Entity Name              ; ongakucircuits_fpga_voiceassigner_tb            ;
@@ -110,11 +110,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 
 +------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Top-level Entity: |ongakucircuits_fpga_voiceassigner_tb ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; clockPeriod    ; 526   ; Signed Integer                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------+
++-----------------+-----------+------------------------------------------------------------------------+
+; Parameter Name  ; Value     ; Type                                                                   ;
++-----------------+-----------+------------------------------------------------------------------------+
+; masterVCOPeriod ; 500       ; Signed Integer                                                         ;
+; sclkPeriod      ; 1000      ; Signed Integer                                                         ;
+; waitLong        ; 100000000 ; Signed Integer                                                         ;
+; waitShort       ; 50000000  ; Signed Integer                                                         ;
++-----------------+-----------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -324,7 +327,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux8" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux8" ;
 +------------+-------+----------+--------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                      ;
 +------------+-------+----------+--------------------------------------------------------------+
@@ -334,7 +337,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux7" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux7" ;
 +------------+-------+----------+--------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                      ;
 +------------+-------+----------+--------------------------------------------------------------+
@@ -344,7 +347,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux6" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux6" ;
 +------------+-------+----------+--------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                      ;
 +------------+-------+----------+--------------------------------------------------------------+
@@ -354,7 +357,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux5" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux5" ;
 +------------+-------+----------+--------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                      ;
 +------------+-------+----------+--------------------------------------------------------------+
@@ -364,7 +367,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux4" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux4" ;
 +------------+-------+----------+--------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                      ;
 +------------+-------+----------+--------------------------------------------------------------+
@@ -374,7 +377,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux3" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux3" ;
 +------------+-------+----------+--------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                      ;
 +------------+-------+----------+--------------------------------------------------------------+
@@ -384,7 +387,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux2" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux2" ;
 +------------+-------+----------+--------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                      ;
 +------------+-------+----------+--------------------------------------------------------------+
@@ -394,7 +397,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:octavemux1" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:octavemux1" ;
 +------------+-------+----------+--------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                      ;
 +------------+-------+----------+--------------------------------------------------------------+
@@ -404,7 +407,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux8" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux8" ;
 +------+-------+----------+-------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                           ;
 +------+-------+----------+-------------------------------------------------------------------+
@@ -413,7 +416,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux7" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux7" ;
 +------+-------+----------+-------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                           ;
 +------+-------+----------+-------------------------------------------------------------------+
@@ -422,7 +425,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux6" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux6" ;
 +------+-------+----------+-------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                           ;
 +------+-------+----------+-------------------------------------------------------------------+
@@ -431,7 +434,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux5" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux5" ;
 +------+-------+----------+-------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                           ;
 +------+-------+----------+-------------------------------------------------------------------+
@@ -440,7 +443,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux4" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux4" ;
 +------+-------+----------+-------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                           ;
 +------+-------+----------+-------------------------------------------------------------------+
@@ -449,7 +452,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux3" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux3" ;
 +------+-------+----------+-------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                           ;
 +------+-------+----------+-------------------------------------------------------------------+
@@ -458,7 +461,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux2" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux2" ;
 +------+-------+----------+-------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                           ;
 +------+-------+----------+-------------------------------------------------------------------+
@@ -467,7 +470,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux1" ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux1" ;
 +------+-------+----------+-------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                           ;
 +------+-------+----------+-------------------------------------------------------------------+
@@ -475,32 +478,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|sr74hc595:octavesr4"                           ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; chain_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut|sr74hc595:pitchsr4"                            ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; chain_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut|spireceiver:spireceiver"                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; ack  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:uut"                                                 ;
+; Port Connectivity Checks: "ongakucircuits_fpga_voiceassigner_sim:dut"                                                 ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                             ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; voices      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pitchsrout  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; octavesrout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pitchData   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; octaveData  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; pitchmuxout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; freqdivout  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -670,9 +664,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Aug 05 18:50:25 2026
+    Info: Processing started: Thu Sep 10 00:35:38 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ongakucircuits_fpga_voiceassigner -c ongakucircuits_fpga_voiceassigner_top --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file spi_receiver.sv
+    Info (12023): Found entity 1: spireceiver
 Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
     Info (12023): Found entity 1: counter
 Info (12021): Found 1 design units, including 1 entities, in source file ongakucircuits_fpga_voiceassigner_top.sv
@@ -687,21 +683,56 @@ Info (12021): Found 1 design units, including 1 entities, in source file ongakuc
     Info (12023): Found entity 1: ongakucircuits_fpga_voiceassigner_sim
 Info (12021): Found 1 design units, including 1 entities, in source file ongakucircuits_fpga_voiceassigner_tb.sv
     Info (12023): Found entity 1: ongakucircuits_fpga_voiceassigner_tb
+Info (12021): Found 1 design units, including 1 entities, in source file clocksync.sv
+    Info (12023): Found entity 1: clocksync
 Info (12127): Elaborating entity "ongakucircuits_fpga_voiceassigner_tb" for the top level hierarchy
-Warning (10755): Verilog HDL warning at ongakucircuits_fpga_voiceassigner_tb.sv(24): assignments to aclk create a combinational loop
+Warning (10755): Verilog HDL warning at ongakucircuits_fpga_voiceassigner_tb.sv(38): assignments to VCOclk create a combinational loop
+Warning (10755): Verilog HDL warning at ongakucircuits_fpga_voiceassigner_tb.sv(44): assignments to sclk create a combinational loop
 Info (12128): Elaborating entity "counter" for hierarchy "counter:TOG0counter"
 Warning (10230): Verilog HDL assignment warning at counter.sv(18): truncated value with size 32 to match size of target (9)
-Info (12128): Elaborating entity "ongakucircuits_fpga_voiceassigner_sim" for hierarchy "ongakucircuits_fpga_voiceassigner_sim:uut"
-Info (12128): Elaborating entity "sr74hc595" for hierarchy "ongakucircuits_fpga_voiceassigner_sim:uut|sr74hc595:pitchsr1"
-Info (12128): Elaborating entity "mux74hc4067" for hierarchy "ongakucircuits_fpga_voiceassigner_sim:uut|mux74hc4067:pitchmux1"
-Info (12128): Elaborating entity "divcd4024" for hierarchy "ongakucircuits_fpga_voiceassigner_sim:uut|divcd4024:freqdiv1"
+Info (12128): Elaborating entity "ongakucircuits_fpga_voiceassigner_sim" for hierarchy "ongakucircuits_fpga_voiceassigner_sim:dut"
+Info (12128): Elaborating entity "spireceiver" for hierarchy "ongakucircuits_fpga_voiceassigner_sim:dut|spireceiver:spireceiver"
+Info (12128): Elaborating entity "mux74hc4067" for hierarchy "ongakucircuits_fpga_voiceassigner_sim:dut|mux74hc4067:pitchmux1"
+Info (12128): Elaborating entity "divcd4024" for hierarchy "ongakucircuits_fpga_voiceassigner_sim:dut|divcd4024:freqdiv1"
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "aclk" is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "VCOclk" is missing source, defaulting to GND
+    Warning (12110): Net "sclk" is missing source, defaulting to GND
     Warning (12110): Net "globalCounterReset" is missing source, defaulting to GND
-Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4569 megabytes
-    Info: Processing ended: Wed Aug 05 18:50:26 2026
-    Info: Elapsed time: 00:00:01
+Info (144001): Generated suppressed messages file C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/output_files/ongakucircuits_fpga_voiceassigner_top.map.smsg
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 4574 megabytes
+    Info: Processing ended: Thu Sep 10 00:35:38 2026
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/charl/Documents/Quartus/fpga-voiceassigner-ongakucircuits/output_files/ongakucircuits_fpga_voiceassigner_top.map.smsg.
 
 
