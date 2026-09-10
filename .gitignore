@@ -1,5 +1,7 @@
 /db/
 /incremental_db/
+/simulation/
+
 
 # Quartus temporary and log files
 *.qws
