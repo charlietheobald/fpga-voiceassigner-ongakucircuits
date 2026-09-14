@@ -1,0 +1,14 @@
+/db/
+/incremental_db/
+/simulation/
+
+
+# Quartus temporary and log files
+*.qws
+*.rpt
+*.smsg
+*.summary
+*.jdi
+*.pin
+*.done
+*.bak
