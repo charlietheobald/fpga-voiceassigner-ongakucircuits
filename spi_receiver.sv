@@ -1,7 +1,6 @@
 module spireceiver(input logic sclk, input logic sdi, input logic cs, output logic[63:0] outputMessage, output logic data_valid, output logic ack);
     logic[5:0] bitCount = 6'b0;
 	 logic[63:0] combinedData = 64'b0;
-	 // Take an SPI message
 
     always_ff @ (posedge sclk) begin
         if(!cs) begin

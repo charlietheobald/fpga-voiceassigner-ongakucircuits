@@ -452,8 +452,8 @@ GPIO_0[6]                    : J21       : bidir  : 3.3-V LVTTL       :         
 GPIO_0[1]                    : J22       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GPIO_0[18]                   : J23       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GPIO_0[19]                   : J24       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
-RESERVED_INPUT               : J25       :        :                   :         : 5         :                
-RESERVED_INPUT               : J26       :        :                   :         : 5         :                
+GPIO_0[30]                   : J25       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_0[31]                   : J26       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT               : K1        :        :                   :         : 2         :                
 RESERVED_INPUT               : K2        :        :                   :         : 2         :                
 RESERVED_INPUT               : K3        :        :                   :         : 2         :                
@@ -478,8 +478,8 @@ GPIO_0[25]                   : K21       : bidir  : 3.3-V LVTTL       :         
 GPIO_0[14]                   : K22       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GPIO_0[26]                   : K23       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GPIO_0[27]                   : K24       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
-RESERVED_INPUT               : K25       :        :                   :         : 5         :                
-RESERVED_INPUT               : K26       :        :                   :         : 5         :                
+GPIO_1[0]                    : K25       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_1[1]                    : K26       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 VCCIO2                       : L1        : power  :                   : 3.3V    : 2         :                
 RESERVED_INPUT               : L2        :        :                   :         : 2         :                
 RESERVED_INPUT               : L3        :        :                   :         : 2         :                
@@ -498,13 +498,13 @@ GND                          : L15       : gnd    :                   :         
 VCCINT                       : L16       : power  :                   : 1.2V    :           :                
 VCCINT                       : L17       : power  :                   : 1.2V    :           :                
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : L19       :        :                   :         : 5         :                
-RESERVED_INPUT               : L20       :        :                   :         : 5         :                
-RESERVED_INPUT               : L21       :        :                   :         : 5         :                
+GPIO_0[35]                   : L19       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_0[29]                   : L20       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_0[28]                   : L21       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GND                          : L22       : gnd    :                   :         :           :                
-RESERVED_INPUT               : L23       :        :                   :         : 5         :                
-RESERVED_INPUT               : L24       :        :                   :         : 5         :                
-RESERVED_INPUT               : L25       :        :                   :         : 5         :                
+GPIO_0[32]                   : L23       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_0[33]                   : L24       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_0[34]                   : L25       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 VCCIO5                       : L26       : power  :                   : 3.3V    : 5         :                
 GND                          : M1        : gnd    :                   :         :           :                
 RESERVED_INPUT               : M2        :        :                   :         : 2         :                
@@ -524,13 +524,13 @@ GND                          : M15       : gnd    :                   :         
 VCCINT                       : M16       : power  :                   : 1.2V    :           :                
 VCCINT                       : M17       : power  :                   : 1.2V    :           :                
 VCCIO5                       : M18       : power  :                   : 3.3V    : 5         :                
-RESERVED_INPUT               : M19       :        :                   :         : 5         :                
-RESERVED_INPUT               : M20       :        :                   :         : 5         :                
-RESERVED_INPUT               : M21       :        :                   :         : 5         :                
-RESERVED_INPUT               : M22       :        :                   :         : 5         :                
-RESERVED_INPUT               : M23       :        :                   :         : 5         :                
-RESERVED_INPUT               : M24       :        :                   :         : 5         :                
-RESERVED_INPUT               : M25       :        :                   :         : 5         :                
+GPIO_1[4]                    : M19       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_1[5]                    : M20       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_1[7]                    : M21       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_1[2]                    : M22       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_1[3]                    : M23       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_1[8]                    : M24       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+GPIO_1[9]                    : M25       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GND                          : M26       : gnd    :                   :         :           :                
 GND+                         : N1        :        :                   :         : 2         :                
 CLOCK_50                     : N2        : input  : 3.3-V LVTTL       :         : 2         : Y              
@@ -551,11 +551,11 @@ GND                          : N16       : gnd    :                   :         
 VCCINT                       : N17       : power  :                   : 1.2V    :           :                
 GPIO_0[10]                   : N18       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GND                          : N19       : gnd    :                   :         :           :                
-RESERVED_INPUT               : N20       :        :                   :         : 5         :                
+GPIO_1[6]                    : N20       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 NC                           : N21       :        :                   :         :           :                
 VCCIO5                       : N22       : power  :                   : 3.3V    : 5         :                
 RESERVED_INPUT               : N23       :        :                   :         : 5         :                
-RESERVED_INPUT               : N24       :        :                   :         : 5         :                
+GPIO_1[10]                   : N24       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GND+                         : N25       :        :                   :         : 5         :                
 GND+                         : N26       :        :                   :         : 5         :                
 GND+                         : P1        :        :                   :         : 1         :                
@@ -581,7 +581,7 @@ MSEL0                        : P20       :        :                   :         
 MSEL1                        : P21       :        :                   :         : 6         :                
 VCCIO6                       : P22       : power  :                   : 3.3V    : 6         :                
 RESERVED_INPUT               : P23       :        :                   :         : 6         :                
-RESERVED_INPUT               : P24       :        :                   :         : 6         :                
+GPIO_1[11]                   : P24       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
 GND+                         : P25       :        :                   :         : 6         :                
 GND+                         : P26       :        :                   :         : 6         :                
 GND                          : R1        : gnd    :                   :         :           :                
@@ -602,13 +602,13 @@ GND                          : R15       : gnd    :                   :         
 VCCINT                       : R16       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : R17       :        :                   :         : 6         :                
 VCCIO6                       : R18       : power  :                   : 3.3V    : 6         :                
-RESERVED_INPUT               : R19       :        :                   :         : 6         :                
-RESERVED_INPUT               : R20       :        :                   :         : 6         :                
+GPIO_1[26]                   : R19       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[14]                   : R20       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
 GND                          : R21       : gnd    :                   :         :           :                
 nSTATUS                      : R22       :        :                   :         : 6         :                
 CONF_DONE                    : R23       :        :                   :         : 6         :                
-RESERVED_INPUT               : R24       :        :                   :         : 6         :                
-RESERVED_INPUT               : R25       :        :                   :         : 6         :                
+GPIO_1[13]                   : R24       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[12]                   : R25       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
 GND                          : R26       : gnd    :                   :         :           :                
 VCCIO1                       : T1        : power  :                   : 3.3V    : 1         :                
 RESERVED_INPUT               : T2        :        :                   :         : 1         :                
@@ -627,14 +627,14 @@ GND                          : T14       : gnd    :                   :         
 GND                          : T15       : gnd    :                   :         :           :                
 VCCINT                       : T16       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : T17       :        :                   :         : 6         :                
-RESERVED_INPUT               : T18       :        :                   :         : 6         :                
-RESERVED_INPUT               : T19       :        :                   :         : 6         :                
-RESERVED_INPUT               : T20       :        :                   :         : 6         :                
-RESERVED_INPUT               : T21       :        :                   :         : 6         :                
-RESERVED_INPUT               : T22       :        :                   :         : 6         :                
-RESERVED_INPUT               : T23       :        :                   :         : 6         :                
-RESERVED_INPUT               : T24       :        :                   :         : 6         :                
-RESERVED_INPUT               : T25       :        :                   :         : 6         :                
+GPIO_1[19]                   : T18       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[27]                   : T19       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[21]                   : T20       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[20]                   : T21       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[15]                   : T22       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[16]                   : T23       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[17]                   : T24       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[18]                   : T25       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
 VCCIO6                       : T26       : power  :                   : 3.3V    : 6         :                
 RESERVED_INPUT               : U1        :        :                   :         : 1         :                
 RESERVED_INPUT               : U2        :        :                   :         : 1         :                
@@ -655,13 +655,13 @@ VCCINT                       : U16       : power  :                   : 1.2V    
 LEDG[5]                      : U17       : output : 3.3-V LVTTL       :         : 7         : Y              
 LEDG[4]                      : U18       : output : 3.3-V LVTTL       :         : 7         : Y              
 GND                          : U19       : gnd    :                   :         :           :                
-RESERVED_INPUT               : U20       :        :                   :         : 6         :                
-RESERVED_INPUT               : U21       :        :                   :         : 6         :                
+GPIO_1[28]                   : U20       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[29]                   : U21       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
 RESERVED_INPUT               : U22       :        :                   :         : 6         :                
-RESERVED_INPUT               : U23       :        :                   :         : 6         :                
-RESERVED_INPUT               : U24       :        :                   :         : 6         :                
-RESERVED_INPUT               : U25       :        :                   :         : 6         :                
-RESERVED_INPUT               : U26       :        :                   :         : 6         :                
+GPIO_1[24]                   : U23       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[25]                   : U24       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[23]                   : U25       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[22]                   : U26       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
 RESERVED_INPUT               : V1        :        :                   :         : 1         :                
 RESERVED_INPUT               : V2        :        :                   :         : 1         :                
 RESERVED_INPUT               : V3        :        :                   :         : 1         :                
@@ -684,10 +684,10 @@ VCCIO6                       : V19       : power  :                   : 3.3V    
 RESERVED_INPUT               : V20       :        :                   :         : 6         :                
 RESERVED_INPUT               : V21       :        :                   :         : 6         :                
 RESERVED_INPUT               : V22       :        :                   :         : 6         :                
-RESERVED_INPUT               : V23       :        :                   :         : 6         :                
-RESERVED_INPUT               : V24       :        :                   :         : 6         :                
-RESERVED_INPUT               : V25       :        :                   :         : 6         :                
-RESERVED_INPUT               : V26       :        :                   :         : 6         :                
+GPIO_1[33]                   : V23       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[32]                   : V24       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[31]                   : V25       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GPIO_1[30]                   : V26       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
 RESERVED_INPUT               : W1        :        :                   :         : 1         :                
 RESERVED_INPUT               : W2        :        :                   :         : 1         :                
 RESERVED_INPUT               : W3        :        :                   :         : 1         :                
@@ -710,9 +710,9 @@ LEDG[2]                      : W19       : output : 3.3-V LVTTL       :         
 GND_PLL4                     : W20       : gnd    :                   :         :           :                
 RESERVED_INPUT               : W21       :        :                   :         : 6         :                
 GND                          : W22       : gnd    :                   :         :           :                
-RESERVED_INPUT               : W23       :        :                   :         : 6         :                
+GPIO_1[35]                   : W23       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
 RESERVED_INPUT               : W24       :        :                   :         : 6         :                
-RESERVED_INPUT               : W25       :        :                   :         : 6         :                
+GPIO_1[34]                   : W25       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
 RESERVED_INPUT               : W26       :        :                   :         : 6         :                
 RESERVED_INPUT               : Y1        :        :                   :         : 1         :                
 NC                           : Y2        :        :                   :         :           :                

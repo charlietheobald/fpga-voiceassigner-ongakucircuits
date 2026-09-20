@@ -537,6 +537,7 @@ set_location_assignment PIN_W23 -to GPIO_1[35]
 set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name SYSTEMVERILOG_FILE dividerkeyer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE spi_receiver.sv
 set_global_assignment -name SYSTEMVERILOG_FILE counter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ongakucircuits_fpga_voiceassigner_top.sv
